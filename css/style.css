@@ -13,7 +13,7 @@
     url('../fonts/OpenSans-Bold.woff2') format('woff2'),
     url('../fonts/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 :root {
@@ -60,8 +60,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-style: bold;
+  margin: 0;
+  font-weight: bold;
 }
 
 p {
@@ -69,11 +69,12 @@ p {
 }
 
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	margin: 0;
-	border: none;
-	background-color: var(--color-input);
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  appearance: none;
+  margin: 0;
+  border: none;
+  background-color: var(--color-input);
 }
 
 input {
