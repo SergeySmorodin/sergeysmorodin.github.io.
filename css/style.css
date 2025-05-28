@@ -1010,12 +1010,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     margin-bottom: 3.125rem;
   }
 
-.trends-list-item {
-  min-height: 250px;
-  width: calc(50% - 4px);
-  margin: 2px;
-  box-sizing: border-box;
- }
+  .trends-list {
+    /* min-height: 250px; */
+    /* width: calc(50% - 2px); */
+    margin: 2px;
+    box-sizing: border-box;
+   }
 
   .section-title {
     margin: 2rem;
@@ -1202,6 +1202,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
   .trends-list-item {
+    width: calc(50% - 2px);
     min-height: 15.5rem;
   }
 
