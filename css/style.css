@@ -135,7 +135,7 @@ sup {
 
 .header-title {
   margin: 0 auto;
-  line-height: 1.625;
+  /* line-height: 1.625; */
   color: var(--color-descr);
   text-align: center;
   text-transform: uppercase;
@@ -155,7 +155,8 @@ sup {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 1.75rem 0.9375rem 0;
+  padding: 2.1rem 0.5rem 0 1.2rem;
+  /* padding: 1.75rem 0.9375rem 0; */
   color: var(--color-descr);
 }
 
@@ -743,15 +744,26 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
 /*==============================================*/
 @media (max-width: 640px) {
+  /* .flex {
+    display: block;
+  } */
+
   .header {
-    margin-bottom: 2.75rem;
+    /* margin-bottom: 2.75rem; */
+    margin-bottom: 1.9rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/banner-mobile.jpg');
     background-size: 100% calc(640*100vw/360);
+    max-height: 40rem;
+  }
+
+  .header-menu {
+    padding: 0;
   }
 
   .burger {
     margin-top: 2rem;
+    margin-right: 0;
   }
 
   .menu-list, .tablet, .desktop{
@@ -759,19 +771,18 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .header-logo {
-    margin: 0 auto;
-    margin-top: 11rem;
+    margin: 11rem auto 0;
     width: 16.875rem;
-    height: 3.75rem;
+    min-height: 4rem;
     background-image: url('../svg/noemi-logo.svg');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .header-title {
     margin-bottom: auto;
-    padding-top: 2.75rem;
+    padding-top: 2.1rem;
     padding-bottom: 13.75rem;
     max-width: 20.625rem;
     font-size: 1.625rem;
@@ -784,7 +795,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*=======================================*/
   /*TRENDS*/
   .trends {
-    margin-bottom: 2.75rem;
+    margin: 2.5rem 0 0.9rem;
   }
 
   .section-title {
@@ -825,6 +836,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*ARTICLES*/
   .articles {
     margin-bottom: 2.75rem;
+    min-width: 20.5rem;
   }
 
   .article {
@@ -833,7 +845,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article:not(:last-child) {
-    margin-bottom: 2.25rem;
+    /* margin-bottom: 2.25rem; */
   }
 
   .article-image {
@@ -841,7 +853,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article-content {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .article-title {
@@ -930,6 +942,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   .trends-list-item {
     width: 100%;
     margin-bottom: 2px;
+    min-height: 14.375rem;
   }
 }
 
@@ -947,7 +960,8 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 /*==================================*/
 @media (min-width: 641px) and (max-width: 1200px){
   .header {
-    margin-bottom: 3.125rem;
+    /* margin-bottom: 3.125rem; */
+    max-height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/banner-bg-tablet.jpg');
     background-size: cover;
@@ -966,7 +980,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     margin: auto;
     padding-top: 6.5rem;
     padding-bottom: 7.75rem;
-    max-width: 38rem;
+    max-width: 39rem;
     font-size: 2.5rem;
   }
 
@@ -981,7 +995,8 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .section-title {
-    margin-bottom: 2.25rem;
+    /* margin-bottom: 2.25rem; */
+    margin: 2rem;
     font-size: 1.125rem;
   }
 
@@ -990,7 +1005,8 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .trends-item {
-    padding: 2.125rem 1.875rem;
+    padding: 1.3rem 1.85rem;
+    /* padding: 2.125rem 1.875rem; */
   }
 
   .trends-title {
@@ -1015,7 +1031,8 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*=======================================*/
   /*ARTICLES*/
   .articles {
-    width: calc(100vw - 2.25rem - 16.875rem);
+    /* width: calc(100vw - 2.25rem - 16.875rem); */
+    width: calc(100vw - 2.25rem - 19rem);
     margin-right: 2.25rem;
   }
 
@@ -1065,7 +1082,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .side-item {
-    margin-bottom: 2.75rem;
+    /* margin-bottom: 2.75rem; */
+    margin-bottom: 2.2rem;
+  }
+
+  .form {
+    padding: 0 0 2rem;
   }
 
   .side-item-title {
@@ -1123,6 +1145,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
   .trends-list-item {
+    min-height: 15.5rem;
     width: calc(50% - 2px);
     margin-bottom: 2px;
   }
