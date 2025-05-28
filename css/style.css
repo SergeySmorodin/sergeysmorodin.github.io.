@@ -1441,4 +1441,3 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
       height: 1.5rem;
   }
 }
-}
