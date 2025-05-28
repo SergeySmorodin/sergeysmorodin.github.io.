@@ -64,10 +64,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* p {
-  margin: 0;
-} */
-
 select {
   /* -webkit-appearance: none;
   -moz-appearance: none; */
@@ -488,6 +484,7 @@ sup {
 }
 
 .cards {
+  min-width: 20.625rem;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -831,7 +828,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*=======================================*/
   /*ARTICLES*/
   .articles {
-    margin: 2rem auto 1.75rem;
+    margin: 0 auto 1.75rem;
     min-width: 20.5rem;
   }
 
@@ -854,12 +851,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
   }
 
   .article-wraper {
-    margin-bottom: 0;
+    margin-bottom: 0.5625rem;
   }
 
   .article-date {
@@ -980,7 +977,6 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 /*==================================*/
 @media (min-width: 641px) and (max-width: 1200px){
   .header {
-    /* margin-bottom: 3.125rem; */
     max-height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/banner-bg-tablet.jpg');
@@ -1014,8 +1010,14 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     margin-bottom: 3.125rem;
   }
 
+.trends-list-item {
+  min-height: 250px;
+  width: calc(50% - 4px);
+  margin: 2px;
+  box-sizing: border-box;
+ }
+
   .section-title {
-    /* margin-bottom: 2.25rem; */
     margin: 2rem;
     font-size: 1.125rem;
   }
@@ -1026,7 +1028,6 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .trends-item {
     padding: 1.3rem 1.85rem;
-    /* padding: 2.125rem 1.875rem; */
   }
 
   .trends-title {
@@ -1070,7 +1071,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article-content {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
 
   .article-title {
@@ -1079,7 +1080,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article-wraper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
 
   .article-date {
@@ -1102,12 +1103,15 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .side-item {
-    /* margin-bottom: 2.75rem; */
-    margin-bottom: 2.2rem;
+    margin-bottom: 0.7rem;
   }
 
   .form {
     padding: 0 0 2rem;
+  }
+
+  input {
+    margin: 0 0 40px;
   }
 
   .side-item-title {
@@ -1119,6 +1123,10 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     width: 100%;
     margin-bottom: 1.5rem;
   }
+
+  .btn-reset {
+      margin-bottom: 2.5625rem;
+    }
 
   /*=======================================*/
   /*SHOP*/
@@ -1181,8 +1189,6 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
   .trends-list-item {
     min-height: 15.5rem;
-    width: calc(50% - 2px);
-    margin-bottom: 2px;
   }
 
   .trends-list-item:nth-child(odd) {
@@ -1247,12 +1253,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .trends-list {
     min-height: 323px;
-    /* margin-bottom: 4rem; */
   }
-
-  /* .conteiner {
-    margin-bottom: 4rem;
-  } */
 
   /*=======================================*/
   /*MAIN*/
