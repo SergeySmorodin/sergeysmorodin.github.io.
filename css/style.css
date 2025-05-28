@@ -405,6 +405,7 @@ sup {
 /*=======================================*/
 /*SEARCH*/
 .search-input {
+  min-height: 3.125rem;
   flex-grow: 1;
   padding-left: 1.125rem;
   font-size: 0.8125rem;
@@ -466,7 +467,7 @@ sup {
 }
 
 .category-item {
-  padding: 0.65rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--color-tags);
 }
 
@@ -743,10 +744,6 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
 /*==============================================*/
 @media (max-width: 640px) {
-  /* .flex {
-    display: block;
-  } */
-
   .header {
     /* margin-bottom: 2.75rem; */
     margin-bottom: 1.9rem;
@@ -794,7 +791,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*=======================================*/
   /*TRENDS*/
   .trends {
-    margin: 2.5rem 0 0.9rem;
+    margin: 2.5rem 0 3rem;
   }
 
   .section-title {
@@ -804,7 +801,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .section-title::before {
-    top: 1.7rem;
+    top: 2rem;
   }
 
   .trends-item {
@@ -834,11 +831,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*=======================================*/
   /*ARTICLES*/
   .articles {
-    margin: 2rem auto 2.75rem;
+    margin: 2rem auto 1.75rem;
     min-width: 20.5rem;
   }
 
   .article {
+    margin-bottom: 0.75rem;
     flex-direction: column;
     border-bottom: 3px solid var(--color-tags);
   }
@@ -852,7 +850,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article-content {
-    margin-bottom: 0.9rem;
+    margin-bottom: 1.375rem;
   }
 
   .article-title {
@@ -877,6 +875,10 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     font-size: 0.875rem;
   }
 
+  p.article-descr {
+    margin: 0;
+  }
+
   /*=======================================*/
   /*ASIDE*/
   .side {
@@ -884,11 +886,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .side-item {
-    margin-bottom: 2.75rem;
+    margin-bottom: 3rem;
   }
 
   .side-item-title {
     margin-bottom: 1.25rem;
+    padding: 1px;
     font-size: 1rem;
     text-transform: uppercase;
   }
@@ -906,6 +909,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*SHOP*/
   .shop {
     max-width: var(--width-container-tablet);
+    margin-top: -3.4rem;
     padding: 0 0.9375rem;
   }
 
