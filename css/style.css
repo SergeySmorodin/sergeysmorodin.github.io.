@@ -378,7 +378,25 @@ sup {
 
 .post-image {
   height: 4.375rem;
+  width: auto;
   margin-right: 1.125rem;
+  position: relative;
+  box-shadow: none;
+  background-clip: content-box;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-image::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.post-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.6);
 }
 
 .post-header {
