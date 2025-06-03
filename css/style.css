@@ -360,8 +360,7 @@ sup {
   height: 0.1875rem;
   margin-left: auto;
   margin-right: auto;
-  /* top: 1.5rem; */
-  top: 1.7rem;
+  top: 1.9rem;
   left: 0;
   right: 0;
   background-color: var(--color-default);
@@ -769,7 +768,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .header-menu {
-    padding: 0;
+    padding: 0 0.625rem 0 0;
   }
 
   .burger {
@@ -816,7 +815,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .section-title::before {
-    top: 2rem;
+    top: 1.8rem;
   }
 
   .trends-item {
@@ -1005,6 +1004,10 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     display: none;
   }
 
+  .header-menu {
+    padding: 2.7rem 0 0 1rem;
+  }
+
   .logo {
     width: 10rem;
     height: 2.25rem;
@@ -1012,7 +1015,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .header-title {
     margin: auto;
-    padding-top: 6.5rem;
+    padding-top: 5.5rem;
     padding-bottom: 7.75rem;
     max-width: 39rem;
     font-size: 2.5rem;
@@ -1036,12 +1039,12 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
    }
 
   .section-title {
-    margin: 2rem;
+    margin: 2.2rem;
     font-size: 1.125rem;
   }
 
   .section-title::before {
-    top: 1.75rem;
+    top: 2.3rem;
   }
 
   .trends-item {
@@ -1071,7 +1074,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   /*ARTICLES*/
   .articles {
     /* width: calc(100vw - 2.25rem - 16.875rem); */
-    width: calc(100vw - 2.25rem - 19rem);
+    width: calc(100vw - 2.25rem - 21rem);
     margin-right: 2.25rem;
   }
 
@@ -1080,7 +1083,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .article:not(:last-child) {
-    margin-bottom: 2.25rem;
+    margin-bottom: 4.25rem;
     border-bottom: 3px solid var(--color-tags);
   }
 
@@ -1134,7 +1137,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .side-item-title {
     margin-bottom: 2.25rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .post {
@@ -1277,7 +1280,6 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .menu-list-item {
     margin-left: 2.1875rem;
-    text-transform: uppercase;
   }
 
   .menu-list-link:hover {
@@ -1366,6 +1368,10 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   .article-content {
     flex-basis: 24.1875rem;
   }
+
+  .list-reset {
+  margin: -0.1875rem;
+}
 
   .article-title {
     margin-bottom: 0.8rem;
