@@ -21,6 +21,7 @@
   --color-hover: #b59f5b;
   --color-title: #000000;
   --color-input: #f4f7f6;
+  --color-input-border: #e9e5d4;
   --color-tags: #ededed;
   --color-social: #f4f7f6;
   --color-descr: #ffffff;
@@ -423,6 +424,13 @@ sup {
   flex-grow: 1;
   padding-left: 1.125rem;
   font-size: 0.8125rem;
+  border: 1px solid var(--color-input-border);
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--color-default);
+  outline: 1px solid var(--color-default);
 }
 
 .search-btn {
@@ -446,6 +454,13 @@ sup {
   margin-bottom: 1rem;
   padding-left: 1.125rem;
   font-size: 0.8125rem;
+  border: 1px solid var(--color-input-border);
+  outline: none;
+}
+
+.mailing-input:focus {
+  border-color: var(--color-default);
+  outline: 1px solid var(--color-default);
 }
 
 .mailing-btn {
