@@ -417,6 +417,10 @@ sup {
   text-transform: uppercase;
 }
 
+.post-name:hover {
+  color: var(--color-hover);
+}
+
 /*=======================================*/
 /*SEARCH*/
 .search-input {
