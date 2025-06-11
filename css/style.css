@@ -102,7 +102,7 @@ sup {
 /* global */
 .list-reset {
   margin: 0;
-  padding: 0;
+  padding: 0.1875rem;
   list-style: none;
 }
 
@@ -381,23 +381,6 @@ sup {
   height: 4.375rem;
   width: auto;
   margin-right: 1.125rem;
-  position: relative;
-  box-shadow: none;
-  background-clip: content-box;
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-}
-
-.post-image::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border-radius: 2px;
-  pointer-events: none;
-}
-
-.post-image:hover {
-  transform: translateY(-2px);
-  box-shadow: 4px 4px 5px rgba(0,0,0,0.6);
 }
 
 .post-header {
@@ -446,6 +429,10 @@ sup {
   background-position: center;
 }
 
+.search-btn:hover {
+  background-color: var(--color-shop);
+}
+
 /*=======================================*/
 /*MAILING*/
 .mailing-form {
@@ -472,6 +459,10 @@ sup {
   height: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.mailing-btn:hover {
+  background-color: var(--color-shop);
 }
 
 /*=======================================*/
@@ -783,7 +774,8 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
     margin-bottom: 1.9rem;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url('../images/banner-mobile.jpg');
-    background-size: 100% calc(640*100vw/360);
+    /* background-size: 100% calc(640*100vw/360); */
+    background-size: cover;
     max-height: 40rem;
   }
 
@@ -812,7 +804,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .header-title {
     margin-bottom: auto;
-    padding-top: 2.1rem;
+    padding-top: 2rem;
     padding-bottom: 13.75rem;
     max-width: 20.625rem;
     font-size: 1.625rem;
@@ -858,6 +850,7 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
 
   .container {
     flex-direction: column;
+    min-width: 0;
     margin-bottom: 2.75rem;
     padding: 0 0.9375rem;
   }
@@ -956,7 +949,9 @@ input[type="radio"]:not(:checked) + .popup-radio-name::before{
   }
 
   .card-image {
-    width: 79.167%;
+    width: 100%;
+    max-width: 79.167%;
+    height: auto;
   }
 
   .card-content {
