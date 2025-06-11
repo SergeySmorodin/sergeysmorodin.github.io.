@@ -220,6 +220,7 @@ sup {
   flex-direction: column;
   justify-content: end;
   border: 0.1875rem solid rgba(181, 159, 91, 0.6);
+  max-width: 100%;
 }
 
 .trends-image1 {
@@ -263,6 +264,9 @@ sup {
   color: var(--color-descr);
   font-weight: 700;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .trends-title:hover {
